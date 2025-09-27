@@ -1,2 +1,28 @@
 -> Ambiente de Teste https://intelbras-teste.softexpert.com/softexpert/workspace?page=home
 -> Ambiente de Produção https://intelbras.softexpert.com/softexpert/workspace?page=home
+
+-------------------------------------------------------------------
+
+Reativação de CCs -> API SAP:
+
+{1 item
+"return":{10 items
+"companyCode":
+"siteCode":
+"internalOrderCode":
+-> Código da Ordem Interna "internalOrderID":
+"internalOrderType":
+"description":
+-> Centro de Lucro -> profitCenterCode":
+-> Centro de Custos Código -> "costCenterSponsorCode":"100139501"  -> Pesquisar no SE, para saber a descrição.
+-> Responsavel(2 campos) -> "internalOrderUser":"KL049929"
+"status":"released"
+}
+}
+
+Ativo, retornar a data de inicio para 01/01/25 e sem data de encerramento.
+
+Incluir relacionamento, das fábricas. Com a relação de dados fornecidos pela API SAP
+
+---------------------
+
