@@ -28,8 +28,8 @@ Incluir relacionamento, das fábricas. Com a relação de dados fornecidos pela 
 
 Acesso ao Grupo de Impressões
 GED Staff -> Grupo de Acesso
-Printcopy
-COP1, 2, 3, 4.
+Printcopy -> Area
+COP1, 2, 3, 4 -> Area
 
 -------------------------------------------------------------------
 
