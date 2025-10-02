@@ -26,7 +26,8 @@ Incluir relacionamento, das fábricas. Com a relação de dados fornecidos pela 
 
 -------------------------------------------------------------------
 
-Acesso ao Grupo de Impressões
+Acesso ao Grupo de Impressões:
+
 GED Staff -> Grupo de Acesso
 Printcopy -> Area
 COP1, 2, 3, 4 -> Area
@@ -34,6 +35,7 @@ COP1, 2, 3, 4 -> Area
 -------------------------------------------------------------------
 
 Alteração de Atributos de Documento em Massa: 
+
 Portal de Documentos > Escolher o Painel
 
 Primeiro Extrair um Backup e Altera a Planilha de Importação
@@ -44,6 +46,8 @@ Configuração > Geral > Agendamento (CM017) > Valores Atributo nos Documentos(0
 
 
 -------------------------------------------------------------------
+
+Mensagens prontas:
 
 Saudações,
 
