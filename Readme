@@ -33,6 +33,18 @@ COP1, 2, 3, 4 -> Area
 
 -------------------------------------------------------------------
 
+Alteração de Atributos de Documento em Massa: 
+Portal de Documentos > Escolher o Painel
+
+Primeiro Extrair um Backup e Altera a Planilha de Importação
+Após alterar planilha, fazer o teste com outro registro com duas linhas.
+
+Configuração > Geral > Acompanhamento (CM15) > Importar > Selecionar a Planilha Após,
+Configuração > Geral > Agendamento (CM017) > Valores Atributo nos Documentos(000011) > Alterar Data e Hora
+
+
+-------------------------------------------------------------------
+
 Saudações,
 
 Solicitações de alterações de processo, criação e outras melhorias. Devem ser solicitadas diretamente no SE SUITE, pelo link informado.
