@@ -1,0 +1,57 @@
+INSERT INTO
+    DYNGTISTC03OBERSAC (
+        oid,
+        nrversion,
+        bncreated,
+        fgenabled,
+        oidrevisionform,
+        fgsystem,
+        bnupdated,
+        nmuserupdate,
+        txobservacao,
+        nmusuario,
+        dtobservacao,
+        oidabcgnaynxm7oydt
+    )
+SELECT
+    LEFT(
+        REPLACE(
+            CAST(
+                (
+                    uuid_in(
+                        CAST(
+                            md5(CAST(random() AS text) || CAST(now() AS text)) AS cstring
+                        )
+                    )
+                ) AS varchar
+            ),
+            '-',
+            ''
+        ),
+        32
+    ),
+    NULL,
+    NULL,
+    NULL,
+    1,
+    NULL,
+    NULL,
+    :nmuserupdate AS NMUSERUPDATE,
+    :txobservacao AS OBSERVACAO,
+    :nmusuario AS SOLICITANTE,
+    NOW() AS DATA,
+    (
+        SELECT
+            FR2.OIDENTITYREG
+        FROM
+            WFPROCESS WF2
+            INNER JOIN GNASSOCFORMREG FR2 ON (
+                WF2.CDASSOCREG = FR2.CDASSOC
+            )
+            INNER JOIN EMENTITYMODEL ENT ON (
+                FR2.OIDENTITYMODEL = ENT.OID
+            )
+        WHERE
+            ENT.IDNAME = 'GTISTC03'
+            AND WF2.IDPROCESS = :ID
+    ) AS oidabcgnaynxm7oydt
