@@ -1,29 +1,29 @@
 INSERT INTO
     DYNGTISTC03OBERSAC (
-        oid,
-        nrversion,
-        bncreated,
-        fgenabled,
-        oidrevisionform,
-        fgsystem,
-        bnupdated,
-        nmuserupdate,
-        txobservacao,
-        nmusuario,
-        dtobservacao,
-        oidabcgnaynxm7oydt
+        OID,
+        NRVERSION,
+        BNCREATED,
+        FGENABLED,
+        OIDREVISIONFORM,
+        FGSYSTEM,
+        BNUPDATED,
+        NMUSERUPDATE,
+        TXOBSERVACAO,
+        NMUSUARIO,
+        DTOBSERVACAO,
+        OIDABCGNAYNXM7OYDT
     )
 SELECT
     LEFT(
         REPLACE(
             CAST(
                 (
-                    uuid_in(
+                    UUID_IN(
                         CAST(
-                            md5(CAST(random() AS text) || CAST(now() AS text)) AS cstring
+                            MD5(CAST(RANDOM() AS TEXT) || CAST(NOW() AS TEXT)) AS CSTRING
                         )
                     )
-                ) AS varchar
+                ) AS VARCHAR
             ),
             '-',
             ''
@@ -36,9 +36,9 @@ SELECT
     1,
     NULL,
     NULL,
-    :nmuserupdate AS NMUSERUPDATE,
-    :txobservacao AS OBSERVACAO,
-    :nmusuario AS SOLICITANTE,
+    :NMUSERUPDATE AS NMUSERUPDATE,
+    :NMUSUARIO AS SOLICITANTE,
+    :TXOBSERVACAO AS OBSERVACAO,
     NOW() AS DATA,
     (
         SELECT
@@ -54,4 +54,4 @@ SELECT
         WHERE
             ENT.IDNAME = 'GTISTC03'
             AND WF2.IDPROCESS = :ID
-    ) AS oidabcgnaynxm7oydt
+    ) AS OIDABCGNAYNXM7OYDT
