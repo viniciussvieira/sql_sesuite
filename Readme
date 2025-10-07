@@ -44,6 +44,11 @@ Após alterar planilha, fazer o teste com outro registro com duas linhas.
 Configuração > Geral > Acompanhamento (CM15) > Importar > Selecionar a Planilha Após,
 Configuração > Geral > Agendamento (CM017) > Valores Atributo nos Documentos(000011) > Alterar Data e Hora
 
+-------------------------------------------------------------------
+
+DEV-MEC06-PARAM-TESTES - Relação de Testes
+
+Inclusão de testes mecanicos da Leticia, é feita nessa tabela.
 
 -------------------------------------------------------------------
 
